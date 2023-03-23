@@ -26,7 +26,7 @@
                                 { 
                                     session_start(); 
                                 } 
-                                if ($_SESSION["autent"]== "SI") {echo "<a href='usuario.php'>Ver perfil</a>";}
+                                if (isset($_SESSION["autent"])) {echo "<a href='usuario.php'>Ver perfil</a>";}
                                 else {echo "Sin conexion";}?></p>
                         <a href="logout.php" class="button">Salir</a>
                     </div>
